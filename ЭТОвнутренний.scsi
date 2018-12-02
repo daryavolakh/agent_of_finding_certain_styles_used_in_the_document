@@ -1,0 +1,46 @@
+       -> .agent_of_finding_all_styles_used_in_the_document_operator50A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tag_head_or_body;;
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _temp_set_with_head_and_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator6E_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator50B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tag_head_or_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator50C_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator50C_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator50D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator50D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _tag_head_or_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator51A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator50B;;
+			*);;

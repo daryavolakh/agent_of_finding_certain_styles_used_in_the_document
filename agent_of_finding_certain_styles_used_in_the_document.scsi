@@ -1,0 +1,1106 @@
+agent_of_finding_certain_styles_used_in_the_document 
+=> nrel_main_idtf: 
+	[агентная scp-программа нахождения стилей конкретного вида в html-документе стилей](* <- lang_ru;;*);
+	[agent scp-program of finding certain styles used in the html-document](* <- lang_ru;;*);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_certain_styles_used_in_the_document
+	(*
+	-> rrel_documents: .agent_of_finding_certain_styles_used_in_the_document_documents
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_certain_styles_used_in_the_document_operators
+		(*
+		-> rrel_init: .agent_of_finding_certain_styles_used_in_the_document_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator1B;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_all_styles_used_in_the_document;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_certain_styles_used_in_the_document_operator1C;;
+			=> nrel_else: .agent_of_finding_certain_styles_used_in_the_document_operator_return;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator1C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var:_param1_document;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_certain_styles_used_in_the_document_operator1D;;
+			=> nrel_else: .agent_of_finding_certain_styles_used_in_the_document_operator_return;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator1D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param2_style_type;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_certain_styles_used_in_the_document_operator2Aa;;
+			=> nrel_else: .agent_of_finding_certain_styles_used_in_the_document_operator_return;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator2Aa
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [BEGIN AGENT!!!];;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator2A;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator2A   
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator2B;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator2B
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_for_styles;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator3A;;
+			*);;
+		
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator3A
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_for_styles;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator3B;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator3B
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var:_param1_document;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator3C;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator3C
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var:_param1_document;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_for_styles;;			
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_used_styles;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator3D;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator3D
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_used_styles;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator3E;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator3E
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var:_param1_document;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_for_styles;;			
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_used_styles;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator4A;;
+			*);;		
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator4A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_html_document;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1_document;;
+
+			=> nrel_then: .agent_of_finding_certain_styles_used_in_the_document5A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22A;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator5A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1_document;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _tag_html;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_html_document_content;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator5B;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22G;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator5B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_html;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _tag_html;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator5C;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator5C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _tag_html;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_tag_content;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator5D;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		        -> .agent_of_finding_all_styles_used_in_the_document_operator5D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator5E;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator5E
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _set_elem;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _set_with_head_and_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator6D;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator6A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_for_class;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator6B;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator6B
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_find_class;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator6B_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param2_style_type;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: concept_style;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _set_for_class;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator6C;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator6C
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator6D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator6D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var:  _set_for_class;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_class;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator6E;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22A;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator6E
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_for_class;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator7A;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator7A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var:  _param2_style_type;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _temp_idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _set_with_idtfs;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator7B;;
+			=> nrel_else: ;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator7B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var:  _set_with_idtfs;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_for_erase;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _temp_idtf;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator7C;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22D;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator7C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_for_erase;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator7D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator7D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:  lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_for_erase;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _temp_idtf;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator8A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator7B;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator8A
+			(*
+			<- stringIfEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:  [глобальный стиль];;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp_idtf;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator9Aa;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator8B;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator8B
+			(*
+			<- stringIfEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:  [внутренний стиль];;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp_idtf;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator50A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator8C;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator8C
+			(*
+			<- stringIfEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:  [связываемый стиль];;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp_idtf;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator15A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22D;; 
+			*);;
+//глобальные стили
+		-> .agent_of_finding_all_styles_used_in_the_document_operator9Aa
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [---------------------------------------GLOBAL STYLES!!!];;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator9A;;
+			*);;
+
+       -> .agent_of_finding_all_styles_used_in_the_document_operator9A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tag_head_or_body;;
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _temp_set_with_head_and_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator6E_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator9B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tag_head_or_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator9C_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator9C_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator9D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator9D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_head;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _tag_head_or_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator10A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator9B;;
+			*);;
+//НЕВЕРНО! СВЯЗКИ СОДЕРЖИМОЕ ТЕГА* НЕТ!!!
+		-> .agent_of_finding_all_styles_used_in_the_document_operator10A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_tag;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _set_with_tag_style;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator10B;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator10B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_tag_style;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_for_erase;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_tag;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator10C;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator10C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_for_erase;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator10D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator10D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_style;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_tag;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator11A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator10B;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator11A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_tag;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_with_selectors;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_tag_content;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator11B;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22M;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator11B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_with_selectors;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator11C;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22M;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator11C
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_selectors;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_selector;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _temp_set_with_selectors;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator11E;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22M;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator11E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set_with_selectors;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_between_set_and_selector;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_selector;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator11F_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator8D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator11F_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_between_set_and_selector;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator11G;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator11G
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_selector;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator11Aa;;  
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator11E;;
+			*);;	
+
+//внутренние стили
+
+		       -> .agent_of_finding_all_styles_used_in_the_document_operator50A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tag_head_or_body;;
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _temp_set_with_head_and_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator6E_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator50B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set_with_head_and_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tag_head_or_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator50C_erase;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22J;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator50C_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator50D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator50D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_body;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _tag_head_or_body;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator51A;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator50B;;
+			*);;	
+
+//занесение селекторов в ответ
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator32Aa
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [WRITE SELECTOR IN ANSWER!!!];;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator32A;;
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator32A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set_with_selectors;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_between_set_and_selector;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_selector;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator32B_erase;;
+			=> nrel_else: .agent_of_finding_certain_styles_used_in_the_document_operator30A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator32B_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_between_set_and_selector;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator32C;;
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator32C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_selector;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator33A;;  
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22M;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_with_selectors;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_between_set_and_selector;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_selector;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33C;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc_between_set_and_selector;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33D;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_style;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_style;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator33E;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22P;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var:  _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_style;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator33G;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator33F;; 
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33F
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_style;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33G;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33G
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_style;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33H;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_style;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_style;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_set: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: rrel_set: _answer;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33I;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33I  
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_styles;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_style;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33J;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33J
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _temp_tag;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_scope;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator33K;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator22S;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33K
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_scope;;
+
+			=> nrel_then: .agent_of_finding_all_styles_used_in_the_document_operator33M;;
+			=> nrel_else: .agent_of_finding_all_styles_used_in_the_document_operator33L;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33L
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_scope;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33M;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33M
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_tag;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33N;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33N
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_tag;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_scope;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator33O;;
+			*);;	
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator33O
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _class_selector;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_selector;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator32A;;
+			*);;	
+
+//ошибки
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22A
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22B;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22B 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22A_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Ошибка входных параметров!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrA;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22C;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22C
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrA;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22D
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22E;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22E 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22E_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Ошибка идентификатора!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrE;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22F;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22F
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrE;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22G
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22H;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22H 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22H_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Пустой документ!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrH;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22I;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22I
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrH;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22J
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22K;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22K 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22K_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Неправильная структура html-документа!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrK;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22L;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22L
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrK;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22M
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22N;;
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator22N 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22N_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Неправильная структура стиля!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrK;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22O;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22O
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrK;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22P
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22Q;;
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator22Q 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22Q_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Ошибка стиля!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrQ;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22R;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22R
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrQ;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22S
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22T;;
+			*);;
+
+        -> .agent_of_finding_all_styles_used_in_the_document_operator22T 
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_all_styles_used_in_the_document_operator22T_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Ошибка селектора!];;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrT;;
+
+			=> nrel_goto: .agent_of_finding_all_styles_used_in_the_document_operator22U;;  
+			*);;
+
+		-> .agent_of_finding_all_styles_used_in_the_document_operator22U
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descrT;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator23A;;
+			*);;
+
+//удаление множества со стилями
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator23A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_for_styles;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator24A;;
+			*);;
+
+//добавление всех стилей в ответ
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator30A
+			(*
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator24A;; 
+			*);;
+
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator24A
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_certain_styles_used_in_the_document_operator_return;; 
+			*);;
+
+		-> .agent_of_finding_certain_styles_used_in_the_document_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
