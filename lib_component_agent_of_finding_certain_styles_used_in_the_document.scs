@@ -1,8 +1,8 @@
 lib_component_agent_of_finding_certain_styles_used_in_the_document
 => nrel_main_idtf:
-	[Компонент библиотеки. Sc-агент нахождения всех стилей, используемых в html-документе]
+	[Компонент библиотеки. Sc-агент нахождения стилей конкретного вида в html-документе]
 	(* <- lang_ru;; *);
-	[Library component. Sc-agent of finding all styles used in the html-document]
+	[Library component. Sc-agent of finding certain styles used in the html-document]
 	(* <- lang_en;; *);
 
 <- platform_independent_reusable_component_OSTIS; 
@@ -20,7 +20,7 @@ lib_component_agent_of_finding_certain_styles_used_in_the_document
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Agent_Of_Finding_Certain_Styles_Used_In_The_Document.html"
+			"file://htmls/Agent_Of_Finding_Сertain_Styles_Used_In_The_Document.html"
 				(* <- lang_ru;; *);; 
 		*);;
 	*);;
@@ -28,9 +28,9 @@ lib_component_agent_of_finding_certain_styles_used_in_the_document
 
 sc_node_not_relation -> action_of_finding_certain_styles_used_in_the_document ;;
 
-action_of_finding_all_styles_used_in_the_document  => nrel_main_idtf:
-	[действие. найти стили конкретного вида, используемые в html-документе]
+action_of_finding_certain_styles_used_in_the_document  => nrel_main_idtf:
+	[действие. найти все стили, используемые в html-документе]
 		(*<- lang_ru;;*);;
-action_of_finding_all_styles_used_in_the_document  => nrel_main_idtf:
+action_of_finding_certain_styles_used_in_the_document  => nrel_main_idtf:
 	[action. find certain styles used in the html-document]
 		(* <- lang_en;; *);;

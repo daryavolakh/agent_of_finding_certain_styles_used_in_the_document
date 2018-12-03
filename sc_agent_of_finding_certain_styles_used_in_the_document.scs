@@ -1,6 +1,6 @@
 sc_agent_of_finding_certain_styles_used_in_the_document
 => nrel_main_idtf:
-	[sc-агент нахождения стилей конкретного вида, используемых в html-документе] 
+	[sc-агент нахождения стилей определённого вида в html-документе] 
 		(* <- lang_ru;; *);
 	[sc-agent of finding certain styles used in the html-document] 
 		(* <- lang_en;; *);
@@ -37,17 +37,19 @@ sc_agent_of_finding_certain_styles_used_in_the_document
 
 ..sc_agent_of_finding_certain_styles_used_in_the_document_condition
 = [*
-	action_of_finding_certain_styles_used_in_the_document _-> .._question;;
+	agent_of_finding_certain_styles_used_in_the_document _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
-	.._question _-> .._param;;
+	.._question _-> rrel_1:: .._param1_document;;
+	.._question _-> rrel_2:: .._param2_style_type;;
 *];;
 
 ..sc_agent_of_finding_certain_styles_used_in_the_document_result
 = [*
-	action_of_finding_certain_styles_used_in_the_document _-> .._question;;
+	agent_of_finding_certain_styles_used_in_the_document _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer;;
-	.._question _-> .._param;;
+	.._question _-> rrel_1:: .._param1_document;;
+	.._question _-> rrel_2:: .._param2_style_type;;
 *];;

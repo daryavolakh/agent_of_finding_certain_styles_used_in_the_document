@@ -1,5 +1,5 @@
 lib_component_ui_menu_file_of_finding_certain_styles_used_in_the_document => nrel_main_idtf:
-	[Компонент библиотеки. Команда поиска стилей конкретного вида, используемых в html-документе]
+	[Компонент библиотеки. Команда поиска стилей конкретного вида в html-документе]
 	(* <- lang_ru;; *);
 	[Library component. User interface command of finding certain styles used in the document]
 	(* <- lang_en;; *);
